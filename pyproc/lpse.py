@@ -10,7 +10,7 @@ from .exceptions import LpseVersionException, LpseServerExceptions, LpseHostExce
 from enum import Enum
 from abc import abstractmethod
 from urllib.parse import urlparse
-
+from time import sleep
 
 class By(Enum):
     KODE = 0
@@ -347,6 +347,7 @@ class BaseLpseDetil(object):
                      'get_jadwal']:
             try:
                 getattr(self, name)()
+                sleep(3)
             except Exception as e:
                 info['error'] = True
                 info['error_message'].append(

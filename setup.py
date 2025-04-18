@@ -26,7 +26,7 @@ setup(
     description='Python SPSEv4 wrapper',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://gitlab.com/wakataw/pyproc',
+    url='https://gitlab.com/mochammadrafi/pyproc',
     author='Agung Pratama',
     author_email='agungpratama1001@gmail.com',
     classifiers=[
@@ -52,8 +52,8 @@ setup(
         'console_scripts': ['pyproc=scripts.downloader:main']
     },
     project_urls={
-        'Bug Reports': 'https://gitlab.com/wakataw/pyproc/issues',
-        'Source': 'https://gitlab.com/wakataw/pyproc'
+        'Bug Reports': 'https://gitlab.com/mochammadrafi/pyproc/issues',
+        'Source': 'https://gitlab.com/mochammadrafi/pyproc'
     },
     keywords='api, spse, lpse, pengadaan, procurement, lkpp, lelang, tender',
     packages=find_packages(exclude=['tests', 'examples']),
